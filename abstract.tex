@@ -1,0 +1,32 @@
+\begin{abstract}
+Learning data sampled from a nonstationary distribution has been shown to be a 
+very challenging problem in machine learning, because the joint probability 
+distribution between the data and classes evolve over time. Thus learners must 
+adapt their knowledge base, including their structure or parameters, to remain 
+as strong predictors. This phenomenon of learning from an evolving data source 
+is akin to learning how to play a game while the rules of the game are changed, 
+and it is traditionally referred to as learning concept drift. Climate data, 
+financial data, epidemiological data, spam detection are examples of applications 
+that give rise to concept drift problems. An additional challenge arises when 
+the classes to be learned are not represented (approximately) equally in the 
+training data, as most machine learning algorithms work well only when the class 
+distributions are balanced. However, rare categories are commonly faced real-world 
+applications, which leads to skewed or imbalanced datasets. Fraud detection, 
+rare disease diagnosis, anomaly detection are examples of applications that 
+feature imbalanced datasets, where data from category are severely underrepresented. 
+Concept drift and class imbalance are traditionally  addressed separately in 
+machine learning, yet data streams can experience both phenomena. This work 
+introduces Learn$^{++}$.NIE (nonstationary \& imbalanced environments) and 
+Learn$^{++}$.CDS (concept drift with SMOTE) as two new members of the Learn$^{++}$ 
+family of incremental learning algorithms that explicitly and simultaneously 
+address the aforementioned phenomena. The former addresses concept drift and 
+class imbalance through modified bagging-based sampling and replacing a class 
+independent error weighting mechanism -- which normally favors majority class -- 
+with a set of measures that emphasize good predictive accuracy on all classes. 
+The latter integrates Learn$^{++}$.NSE, an algorithm for concept drift, with 
+the synthetic sampling method known as SMOTE, to cope with class imbalance. 
+This research also includes a thorough evaluation of Learn$^{++}$.CDS and 
+Learn$^{++}$.NIE on several real and synthetic datasets and on several 
+figures of merit, showing that both algorithms able to learn in some of the 
+most difficult learning environments.
+\end{abstract}
